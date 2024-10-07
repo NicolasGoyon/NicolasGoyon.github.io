@@ -2,31 +2,31 @@
 
  
 .bandeau {
-    background-color: #e42b34d8;
-    color: #000000;
+    background-color: #7eb6c4;
+    color: #ECF0F1;
     padding: 15px;
     text-align: center;
-    font-size: 30px;
+    font-size: 26px;
     border-radius: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .footer {
-    background-color: #e42b34d8;
-    color: #000000;
+    background-color: #7eb6c4;
+    color: #ECF0F1;
     padding: 15px;
     text-align: center;
-    font-size: 18px;
+    font-size: 14px;
     border-radius: 0px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* NavBar */
 
-/*début du menu*/
 .menu {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 18px;
-    color: #000000;
+    font-size: 14px;
+    color: #ECF0F1;
 }
 
 * {
@@ -38,11 +38,12 @@
 nav {
     width: 100%;
     margin: 0px auto 40px auto;
-    background-color: #e42b34d8;
+    background-color: #7eb6c4;
     position: sticky;
     top: 0px;
     margin-bottom: 0;
     font-size: 1.5em;
+    color: #ECF0F1;
 }
 
 nav ul {
@@ -51,11 +52,10 @@ nav ul {
 
 nav li {
     float: left;
-    width: 25%; /* 100% divisé par le nombre d'éléments de menu */
-    text-align: center; /* Centre le texte dans les éléments de menu */
+    width: 25%; 
+    text-align: center; 
 }
 
-/* Evite que le menu n'ait une hauteur nulle */
 nav ul::after {
     content: "";
     display: table;
@@ -63,11 +63,11 @@ nav ul::after {
 }
 
 nav a {
-    display: block; /* Toute la surface sera cliquable */
+    display: block; 
     text-decoration: none;
     color: black;
-    border-bottom: 2px solid transparent; /* Evite le décalage des éléments sous le menu à cause de la bordure en :hover */
-    padding: 10px 0px; /* Agrandit le menu et espace la bordure du texte */
+    border-bottom: 2px solid transparent; 
+    padding: 10px 0px; 
 }
 
 nav a:hover {
@@ -80,112 +80,85 @@ nav a:hover {
   height: 1500px;
 }
 
-/* fin du menu */
-
-.Presentations {
-    background-color: #e42b34d8;
-    height: 800px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 0;
-}
-
-/* Styles par défaut */
-.Skills {
+/* display for CV and DL */
+.Skills_CV {
     background-color: white;
     height: 800px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.cv-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Skill Grid */
+
 .container {
-    display: flex; /* Utilisation de flexbox pour aligner les conteneurs */
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-    justify-content: space-between; /* Espace entre les conteneurs */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
 }
 
 .inline-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 48%; /* Largeur des conteneurs pour qu'ils tiennent côte à côte */
+    width: 48%; 
 }
 
 .item {
-    width: 100%; /* Largeur des éléments à 100% du conteneur */
+    width: 100%; 
     height: 100px;
     text-align: center;
 }
 
-.savoir_etre {
-    /* background-color: #e42b34d8; TESTFORM */
-    text-align: center;
-}
+ /* Style for diff categories */
 
-.savoir_etrex {
-    /* background-color: #e42b34d8; TESTFORM */
-    text-align: center;
-}
-
-.language {
-    /* background-color: #e42b34d8; TESTFORM */
-    text-align: center;
-}
-
-.languagex {
-    /* background-color: #e42b34d8; TESTFORM */
-    text-align: center;
-}
-/* fin test grille */
-
-.Projects {
-    background-color: #e42b34d8;
+ .categories_blue {
+    background-color: lightblue;
     height: 800px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
 }
 
-.Contacts {
+.categories_white {
     background-color: white;
     height: 800px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 .MentionLegale {
-    background-color: #e42b34d8;
+    background-color: lightblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     text-align: justify;
 }
 
+.Plan {
+    background-color: lightblue;
+    min-height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 0;
+}
+
 .Body {
-    background-color: #e42b34d8;
+    background-color: lightblue;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     min-height: 100vh;
+    color: #4f747d;
 }
 
-/* Bouton Linkedin */
-
-.fa:hover {
-    opacity: 0.9;
+.Skill_list {
+    text-align: justify;
+    margin-left: 20px;
 }
 
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 60px;
-    text-decoration: none;
-    margin: 5px 80px;
-}
-
-/*fin boutton Linkedin*/
-
-/*test affichage projet*/
+/* Modal JS */
 
 .modal {
     display: none;
@@ -212,35 +185,33 @@ nav a:hover {
     top: 10px;
     right: 10px;
     color: red;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-/* Pour les liens non visités */
+/* Link */
 a:link {
-    color: inherit; /* Utilise la couleur du texte environnant */
-    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; 
+    text-decoration: none; 
 }
 
-/* Pour les liens visités */
 a:visited {
-    color: inherit; /* Utilise la couleur du texte environnant */
-    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; 
+    text-decoration: none; 
 }
 
-/* Pour les liens au survol */
 a:hover {
-    color: inherit; /* Utilise la couleur du texte environnant */
-    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; 
+    text-decoration: none;
 }
 
-/* Pour les liens actifs */
 a:active {
-    color: inherit; /* Utilise la couleur du texte environnant */
-    text-decoration: none; /* Supprime le soulignement */
+    color: inherit; 
+    text-decoration: none;
 }
 
-/* taille image */
+/* image size */
+
 .small {
     width: 50px;
     height: 50px;
@@ -251,24 +222,66 @@ a:active {
     height: 200px;
 }
 
-/* Styles pour les petits écrans (téléphones) */
+.normal_presentation1 {
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+
+.normal_presentation2 {
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.verysmall {
+    width: 30px;
+    height: 30px;
+}
+
+.big {
+    width: 361px;
+    height: 512px;
+    cursor: pointer;
+}
+
+/* Style for smaller Screen */
+
+@media (max-width: 900px) {
+    nav{
+        font-size: 19px
+    }
+}
+
 @media (max-width: 480px) {
     body {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .footer {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     nav {
-        font-size: 12px;
+        font-size: 9px;
     }
 
     img.normal {
-        width: 25%;
-        height: auto;
+        width: 100px;
+        height: 100px;
     }
 
+    .normal_presentation1 {
+        width: 100px;
+        height: 100px;
+        float: right;
+    }
+    
+    .normal_presentation2 {
+        width: 100px;
+        height: 100px;
+        float: left;
+    }
+    
 
 }
