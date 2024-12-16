@@ -100,11 +100,20 @@ nav a:hover {
     justify-content: space-between; 
 }
 
+.projet-inline {
+    margin: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .inline-container {
     display: flex;
+    flex: column;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 48%; 
+    margin: 10%;
+    margin-top: 10px;
+    
 }
 
 .item {
@@ -154,7 +163,7 @@ nav a:hover {
 }
 
 .Skill_list {
-    text-align: justify;
+    text-align: center;
     margin-left: 20px;
 }
 
@@ -220,6 +229,12 @@ a:active {
 .normal {
     width: 200px;
     height: 200px;
+}
+
+.projet {
+    width: 400px;
+    height: 200px;
+    cursor: pointer;
 }
 
 .normal_presentation1 {
